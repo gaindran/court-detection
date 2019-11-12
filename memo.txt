@@ -1,0 +1,2 @@
+execute ./build.sh directly, don't run seperate command as official github readme said
+this may skip many troubles(like edit opencv/3.4.5@conan/stable still not work, remove CMakeCache.txt manually)

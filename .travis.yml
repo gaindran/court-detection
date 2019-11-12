@@ -1,0 +1,12 @@
+language: cpp
+compiler:
+  - g++
+os:
+  - osx
+osx_image: xcode9.4
+before_install:
+  - brew install conan
+  - CC=clang CXX=clang++ conan profile new default --detect
+#  - export PKG_CONFIG_PATH=/usr/local/opt/opencv@2/lib/pkgconfig
+script:
+  - CC=clang CXX=clang++ ./build.sh

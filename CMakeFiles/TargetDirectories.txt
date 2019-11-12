@@ -1,0 +1,3 @@
+/home/gaindran/demo/court-detection/CMakeFiles/rebuild_cache.dir
+/home/gaindran/demo/court-detection/CMakeFiles/detect.dir
+/home/gaindran/demo/court-detection/CMakeFiles/edit_cache.dir
