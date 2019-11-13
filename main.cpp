@@ -62,7 +62,7 @@ int main(int argc, char** argv)
     TimeMeasurement::start("LineDetection");
     Mat binaryImage = courtLinePixelDetector.run(frame);
     std::vector<Line> candidateLines = courtLineCandidateDetector.run(binaryImage, frame);
-    TennisCourtModel model = tennisCourtFitter.run(candidateLines, binaryImage, frame);
+    BadmintonCourtModel model = tennisCourtFitter.run(candidateLines, binaryImage, frame);
     int elapsed_seconds = TimeMeasurement::stop("LineDetection");
     std::cout << "Elapsed time: " << elapsed_seconds << "s." << std::endl;
     if (argc == 2)
