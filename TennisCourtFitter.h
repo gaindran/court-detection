@@ -21,7 +21,7 @@ public:
 
   TennisCourtFitter(Parameters p);
 
-  TennisCourtModel run(const std::vector<Line>& lines, const cv::Mat& binaryImage, const cv::Mat& rgbImage);
+  BadmintonCourtModel run(const std::vector<Line>& lines, const cv::Mat& binaryImage, const cv::Mat& rgbImage);
 
   static bool debug;
   static const std::string windowName;
@@ -39,5 +39,5 @@ private:
   Parameters parameters;
   std::vector<LinePair> hLinePairs;
   std::vector<LinePair> vLinePairs;
-  TennisCourtModel bestModel;
+  BadmintonCourtModel bestModel;
 };
