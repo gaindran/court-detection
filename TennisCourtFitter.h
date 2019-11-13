@@ -6,7 +6,8 @@
 
 #include "Line.h"
 #include <opencv2/opencv.hpp>
-#include "TennisCourtModel.h"
+// #include "TennisCourtModel.h"
+#include "BadmintonCourtModel.h"
 
 class TennisCourtFitter
 {
