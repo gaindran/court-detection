@@ -32,7 +32,7 @@ TennisCourtFitter::TennisCourtFitter(TennisCourtFitter::Parameters p)
 
 }
 
-TennisCourtModel TennisCourtFitter::run(const std::vector<Line>& lines, const Mat& binaryImage,
+BadmintonCourtModel TennisCourtFitter::run(const std::vector<Line>& lines, const Mat& binaryImage,
   const Mat& rgbImage)
 {
   TimeMeasurement::start("TennisCourtFitter::run");
@@ -42,8 +42,8 @@ TennisCourtModel TennisCourtFitter::run(const std::vector<Line>& lines, const Ma
   sortHorizontalLines(hLines, rgbImage);
   sortVerticalLines(vLines, rgbImage);
 
-  hLinePairs = TennisCourtModel::getPossibleLinePairs(hLines);
-  vLinePairs = TennisCourtModel::getPossibleLinePairs(vLines);
+  hLinePairs = BadmintonCourtModel::getPossibleLinePairs(hLines);
+  vLinePairs = BadmintonCourtModel::getPossibleLinePairs(vLines);
 
   if (debug)
   {
@@ -134,7 +134,7 @@ void TennisCourtFitter::findBestModelFit(const cv::Mat& binaryImage, const cv::M
   {
     for (auto& vLinePair: vLinePairs)
     {
-      TennisCourtModel model;
+      BadmintonCourtModel model;
       float score = model.fit(hLinePair, vLinePair, binaryImage, rgbImage);
       if (score > bestScore)
       {
