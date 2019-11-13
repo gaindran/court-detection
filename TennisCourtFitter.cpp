@@ -2,8 +2,7 @@
 // Created by Chlebus, Grzegorz on 28.08.17.
 // Copyright (c) Chlebus, Grzegorz. All rights reserved.
 //
-// #include "TennisCourtFitter.h"
-#include "BadmintonCourtFitter.h"
+#include "TennisCourtFitter.h"
 #include "GlobalParameters.h"
 #include "TimeMeasurement.h"
 #include "DebugHelpers.h"
