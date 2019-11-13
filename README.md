@@ -1,23 +1,20 @@
-# tennis-court-detection
-[![Build
-Status](https://travis-ci.com/gchlebus/tennis-court-detection.svg?branch=master)](https://travis-ci.com/gchlebus/tennis-court-detection)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# court-detection
+
+Modifid from gchlebus 
+(https://travis-ci.com/gchlebus/tennis-court-detection.svg?branch=master)](https://travis-ci.com/gchlebus/tennis-court-detection)
 
 Fully automatic algorithm for tennis court line detection. Implementation based on Farin
 D. et al. "Robust Camera Calibration for Sports Videos using Court Models", *Storage and
 Retrieval Methods and Applications for Multimedia 2004*, 2003.
 
-![AlgorithmResult](tennis-court-detection.png)
+![AlgorithmResult]
 
 # Installation instructions
 
 ```
 git clone https://github.com/gchlebus/tennis-court-detection.git
 cd tennis-court-detection
-mkdir build && cd build
-conan install .. --build missing
-cmake ..
-cmake --build .
+./build.sh
 ```
 
 # Usage
@@ -33,7 +30,7 @@ Usage: ./detect video_path [output_path]
 ```
 
 ## Output file
-
+[Tennis]
 The output file contains one point per line. The XY coordinates are separated by a
 semicolon ";".  The points are in the following order:
 
